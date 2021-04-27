@@ -1,0 +1,138 @@
+<!doctype html>
+
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8" />
+    <title> SPA | Anastazja Reinisch</title>
+    <meta name="description" content="SPA" />
+    <meta name="author" content="Anastazja Reinisch" />
+    <link href="css/3D-rotations.css" rel="stylesheet" />
+</head>
+
+<body class="impress-not-supported">
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a
+            simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+    </div>
+
+    <div id="impress" data-transition-duration="2000">
+
+
+        <div id="overview" class="step overview" data-x="1350" data-y="100" data-z="100" data-scale="3"
+            data-rotate-y="90">
+            <h1>Single Page Application </h1>
+            <b>
+                <center>Anastazja Reinisch, <br> 146942</center>
+            </b>
+        </div>
+
+        <div id="slide-1" class="step" data-x="0" data-y="0" data-z="0" data-goto-prev="step-8">
+            <p style="text-align: center"><b>What is a SPA?</b></p>
+            <p style="font-size: 40px; text-align: justify">Design pattern for web app.</p>
+            <p style="font-size: 20px; text-align: justify">An app that works inside a browser and does not require page reloading during use.
+            </p>
+			<center>
+			<video style="display:inline-block;" width="420" height="340" controls loop autoplay muted>
+			<source src="FloraTer.mp4" type="video/mp4">
+			<source src="FloraTer.ogg" type="video/ogg">
+			Your browser does not support the video tag.
+			</video>
+			</center>
+        </div>
+
+        <div id="slide-2" class="step" data-x="420" data-y="-70" data-z="-250" data-rotate-z="45" data-rotate-y="-45"
+            data-rotate-order="zyx">
+            <p style="text-align: center">A quick overview of how does it work</p>
+            <img style="opacity:1; margin:10px 25px 5px 25px;" width="520" height="340"src="react.PNG" alt="Code">
+        </div>
+
+        <div id="slide-3" class="step" data-x="700" data-y="350" data-z="-350" data-rotate-z="90" data-rotate-y="-90"
+            data-rotate-order="zyx">
+            <p style="text-align: center">Pros and Cons</p>
+            <p style="font-size: 15px; text-align: justify">Pros:</p>
+            <ul style="font-size: 15px">
+                <li> Less complex dynamic components building </li>
+                <li> Less complex large and non-trivial websites building </li>
+                <li> Better user experience </li>
+                <li> Less load on the server: <br> SPA can cache any local storage effectively. An application sends only one request, store all data, then it can use this data and works even offline. </li>
+                <li> Better client-server interaction, the dividing of front-end’s and back-end’s concerns </li>
+                <li> Low cost of support in the long term </li>
+            </ul>
+            <p style="font-size: 15px; text-align: justify">Cons:</p>
+            <ul style="font-size: 15px">
+                <li> Complexity: <br>
+                    It is slow to download because heavy client frameworks are required to be loaded to the client. <br>
+                    Compared to the “traditional” application, SPA is less secure. Due to Cross-Site Scripting (XSS), it enables attackers to inject client-side scripts into web application by other users.</li>
+                <li>You need more time to create a minimum viable product (MVP), really tho?</li>
+            </ul>
+        </div>
+
+        <div id="slide-4" class="step" data-x="422" data-y="780" data-z="-250" data-rotate-z="135" data-rotate-y="-135"
+            data-rotate-order="zyx">
+            <p style="text-align: center">When to use?</p>
+            <p style="font-size: 15px; text-align: justify">Medium or large scale websites, or websites with much dynamics and state:
+            </p>
+            <ul style="font-size: 15px">
+                <li>Websites with a lot of user interfaces.</li>
+                <li>SaaS platforms</li>
+                <li>data-driven and form-intensive applications</li>
+                <li>mobile applications</li>
+                <li>desktop applications</li>
+            </ul>
+        </div>
+
+        <div id="slide-5" class="step" data-x="0" data-y="702" data-z="0" data-rotate-z="180" data-rotate-y="-180"
+            data-rotate-order="zyx">
+            <p style="text-align: center">Myths on SPA</p>
+            <ul style="font-size: 15px">
+                <li>SEO optimization ( Next.js - SSR for indexing reasons)
+                </li>
+                <li>Google Analytics won't work (TIP: USE page load events) - <a href="https://mansfeld.pl/programowanie/integracja-polaczenie-spa-google-analytics/" target="popup" onclick="window.open">HOWTO</a></li>
+            </ul>
+
+            <p style="text-align: center">Tech stack</p>
+            <ul style="font-size: 15px">
+                <li>Vanilla JS <a href="https://github.com/dcode-youtube/single-page-app-vanilla-js" target="popup" onclick="window.open">CODE EXAMPLE</a>
+                </li>
+                <li>Vue.js <a href="https://github.com/DChuchin/vue-spa-tutorial" target="popup" onclick="window.open">CODE EXAMPLE</a> <a href="https://www.adcisolutions.com/knowledge/how-build-single-page-application-spa-vuejs" target="popup" onclick="window.open">TUTORIAL</a></li>
+                <li>React.js </li>
+                <li>AngularJS </li>
+            </ul>
+        </div>
+
+        <div id="slide-6" class="step" data-x="379" data-y="-70" data-z="270" data-rotate-z="45" data-rotate-y="-315"
+            data-rotate-order="zyx" data-goto-next="step-1">
+            <p style="text-align: center; font-size: 45px"><b>Thank your for your attention!</b></p>
+			<p style="text-align: center; font-size: 15px">Created with impress.js. <br>
+
+			<a style="font-size: 15px; text-align: justify" href='https://github.com/impress/impress.js/' target="popup" onclick="window.open">See source code for reference </a><br></p>
+			<img style="position: relative; margin: 20px 30px 20px 30px;"width="500px" height="350px " src="friends.PNG"/>
+        </div>
+
+    </div>
+
+    <div id="impress-toolbar"></div>
+    <div id="impress-help"></div>
+
+    <script type="text/javascript" src="../../js/impress.js"></script>
+    <script>impress().init();</script>
+    <script type="text/javascript" src="http://www.webestools.com/page/js/flashobject.js"></script>
+    <script type="text/javascript">
+        var flashvars_9859 = {};
+        var params_9859 = {
+            quality: "high",
+            wmode: "transparent",
+            bgcolor: "#ffffff",
+            allowScriptAccess: "always",
+            allowFullScreen: "true",
+            flashvars: "url=http%3A%2F%2Fflash.webestools.com%2Fmp3_player%2Ffree_software_song.mp3&autostart=no"
+        };
+        var attributes_9859 = {};
+        flashObject("http://flash.webestools.com/mp3_player/s_1.swf", "player_9859", "600", "35", "8", false, flashvars_9859, params_9859, attributes_9859);
+    </script>
+
+</body>
+
+</html>
